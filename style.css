@@ -1,0 +1,118 @@
+/* ===== RESET & BASE STYLES ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.7;
+}
+
+/* ===== PROFILE HEADER ===== */
+.profile-header {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.profile-header .avatar {
+    font-size: 64px;
+    margin-bottom: 12px;
+}
+
+.profile-header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 8px;
+}
+
+.profile-header .subtitle {
+    font-size: 1.1rem;
+    opacity: 0.85;
+}
+
+/* ===== MAIN CONTAINER ===== */
+.container {
+    max-width: 720px;
+    margin: -40px auto 40px;
+    padding: 0 20px;
+}
+
+/* ===== CARD STYLES ===== */
+.card {
+    background: white;
+    border-radius: 12px;
+    padding: 32px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.card h2 {
+    font-size: 1.3rem;
+    color: #667eea;
+    margin-bottom: 12px;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 8px;
+}
+
+.card p {
+    color: #555;
+}
+
+/* ===== HIGHLIGHT CARD (SRP Goal) ===== */
+.card.highlight {
+    border-left: 4px solid #764ba2;
+    background: linear-gradient(to right, #faf5ff, white);
+}
+
+/* ===== SKILL LIST ===== */
+.skill-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.skill-list li {
+    background: #f0f0ff;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    color: #444;
+}
+
+.skill-list li::before {
+    content: "✦ ";
+    color: #667eea;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    text-align: center;
+    padding: 24px;
+    color: #999;
+    font-size: 0.9rem;
+}
+
+/* ===== RESPONSIVE (MOBILE) ===== */
+@media (max-width: 600px) {
+    .profile-header {
+        padding: 40px 16px;
+    }
+
+    .profile-header h1 {
+        font-size: 1.6rem;
+    }
+
+    .skill-list {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        padding: 24px;
+    }
+}
